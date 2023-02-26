@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="#home" class="left">Home</a>
+        <ul class="right">
+            <li><a href="#genres">Genres</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+        </ul>
+    </nav>
+    <div class="home" id="home">
+        <div class="site-name"><span>C</span>omicove.</div>
+        <p class="site-info">The world of comics awaits you.
+             Dive into the vast sea of genres and find yourself the latest comic book releases</p>
+             <div class="btn">
+                <a href="#" class="log-in" id="showLogin" >Log in</a>
+                <a href="#" class="sign-up" id="showSignup" >Sign up</a>
+    </div></div>
+    <div class="genres" id="genres">
+        <header>GENRES</header>
+        <div class="cards">
+        <a href="superheroes.html" class="superheroes">
+            <p>Superheroes</p>
+        </a>
+        <a href="non-fiction.html" class="non-fiction">
+            <p>Non-Fiction</p>
+        </a>
+        <a href="horror.html" class="horror">
+            <p>Horror</p>
+        </a>
+    </div>
+</div>
+
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="hideModal-login" >&times;</span>
+        <h2>Login</h2>
+        <form>
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" id="loginBtn" value="Log in">
+        </form>
+    </div>
+</div>
+
+
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="hideModal-signup" >&times;</span>
+        <h2>Sign up</h2>
+        <form id="signup-form">
+            <label for="name">Name</label>
+            <input type="text" id="signup-name" name="Name">
+            <label for="Email">Email</label>
+            <input type="email" id="signup-email" name="email">
+            <label for="password">Password</label>
+            <input type="password" id="signup-password" name="password">
+            <input type="submit" id="signUpBtn" value="Sign up">
+        </form>
+    </div>
+</div>
+
+    <script type = "module" src="app.js"></script>
+</body>
+</html>
